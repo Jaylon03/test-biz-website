@@ -1,0 +1,18 @@
+ <h2>Our Services</h2>
+            <div class="service">
+                <h3>Autonomous Agent Development</h3>
+                <p>Automate cold emailing campaigns to reach potential clients using tools like Mailchimp and Gmail, helping businesses expand their network and generate leads without manual effort.</p>
+            </div>
+            <div class="service">
+                <h3>Consulting 
+                    and Strategy</h3>
+                <p>Provide expert consulting to identify AI opportunities and develop strategies for businesses, leveraging your knowledge to enhance their operational efficiency and innovation.</p>
+            </div>
+            <div class="service">
+                <h3>AI Chatbot </h3>
+                <p>Develop enovative chatbots using platforms like Dialogflow to enhance customer engagement on websites and social media, offering an interactive experience without extensive coding.</p>
+            </div> <div class="service">
+                <h3>Increase
+                    Marketing ROI</h3>
+                <p>Conduct feasibility assessments for AI projects to evaluate their viability and potential ROI, ensuring alignment with business goals and resources using open-source tools.</p>
+            </div>
