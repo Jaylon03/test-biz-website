@@ -317,7 +317,7 @@ nav ul li a:hover {
 .contact-item i {
     margin-right: 10px;
     font-size: 20px;
-    color: var(--primary-color);
+    color: #fff;
 }
 
 .contact-item span {
@@ -338,7 +338,7 @@ nav ul li a:hover {
 }
 
 .social-link:hover {
-    color: var(--primary-color);
+    color:#d7d3d3;
 }
 
 /* Footer Styles */

@@ -1,0 +1,207 @@
+
+:root {
+    --primary-color: black;
+    --secondary-color: #fff;
+    --text-color: black;
+    --hover-bg-color: #5e5b5b;
+    --border-color: #111111;
+    --background-color: #f4f4f4;
+    --dark-bg-color: #333;
+    --footer-bg-color: #222;
+    --box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    --hover-box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.team-container {
+    text-align: center;
+}
+
+.team-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.headshot {
+    max-width: 100%;
+    height: auto;
+}
+
+.name-social-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+
+
+/* Navigation Bar */
+header {
+    width: 100%;
+    background-color: white;
+}
+
+nav {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 15px 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 25px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    line-height: 40px;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s ease-in;
+}
+
+nav ul li a:hover {
+    border-bottom-color: var(--primary-color);
+}
+
+/* Flexbox for Logo and Title */
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.nav-logo img {
+    width: 70px;
+    height: auto;
+}
+
+.nav-logo h2 {
+    font-size: 25px;
+    margin: 0;
+    color: black;
+}
+
+
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .tagline {
+        font-size: 1.8rem;
+    }
+
+    .see-more-container {
+        justify-content: center;
+    }
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Contact Section */
+#contact {
+    padding: 30px 20px;
+    background-color: #363636;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #f5eeee;  /* White color for heading */
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.contact-item {
+    flex: 1 1 200px;
+    margin: 5px 10px;
+  
+    color: #ffffff;  /* White color for contact items */
+}
+
+.contact-item i {
+    font-size: 24px;
+    margin-right: 10px;
+    color: #e7ecee;
+}
+
+.contact-item span {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;  /* White color for text */
+}
+
+.contact-item a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #ecf0f1;
+}
+
+.contact-item a:hover {
+    text-decoration: underline;
+}
+
+/* Social Media Links */
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.social-link {
+    color: #f4f8fa;
+    font-size: 24px;
+    transition: color 0.3s;
+    text-decoration: none; /* Ensure no underline or other styles interfere */
+}
+
+.social-link:hover {
+    color: #f5f6f6;
+}
+
+/* Footer */
+footer {
+    background-color: #1f1f1f;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+    color: #ffffff;  /* White color for footer text */
+}
+
