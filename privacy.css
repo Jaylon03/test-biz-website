@@ -1,0 +1,147 @@
+:root {
+    --primary-color: black;
+    --secondary-color: #fff;
+    --text-color: black;
+    --hover-bg-color: #5e5b5b;
+    --border-color: #111111;
+    --background-color: #f4f4f4;
+    --dark-bg-color: #333;
+    --footer-bg-color: #222;
+    --box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    --hover-box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+/* Container Styles */
+.container {
+    max-width: 100%px;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+   
+}
+
+/* Navigation Bar */
+header {
+    width: 100%;
+    background-color: white;
+    justify-content: center;
+}
+
+nav {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 15px 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 25px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    line-height: 40px;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s ease-in;
+}
+
+
+/* Flexbox for Logo and Title */
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.nav-logo img {
+    width: 70px;
+    height: auto;
+}
+
+.nav-logo h2 {
+    font-size: 18px;
+    margin: 0;
+    color: black;
+}
+
+/* Flexbox for Logo and Title */
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-logo img {
+    width: 70px;
+    height: auto;
+}
+
+.nav-logo h2 {
+    font-size: 25px;
+    margin: 0;
+    color: black;
+}
+h1, h2 {
+    color: #0a74da;
+    font-weight: bold;
+}
+
+p, ul, li {
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+a {
+    color: #0a74da;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Container */
+.container {
+    width: 85%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 30px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
