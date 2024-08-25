@@ -9,7 +9,7 @@
     <!-- Add GSAP CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
     <link rel="icon" href="images/Solution’s AI logo black.png" type="image/png">
-    
+    <script id="vtag-ai-js" async src="https://r2.leadsy.ai/tag.js" data-pid="5tANgvXKUsA4bRrU" data-version="062024"></script>
 
 </head>
 <body>
@@ -27,6 +27,19 @@
                     <li><a href="https://calendly.com/jnsolutionsms/30-min">Contact</a></li>
                 </ul>
             </nav>
+        </div>
+
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <ul class="mobile-menu">
+                <li><a href="#home">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="teampage2.html">Team</a></li>
+                    <li><a href="https://calendly.com/jnsolutionsms/30-min">Contact</a></li>
+                
+            </ul>     
         </div>
     </header>
 
@@ -128,5 +141,53 @@
 
     <!-- JavaScript for animations and navbar -->
     <script src="javascript.js"></script> <!-- Updated to use the correct JavaScript file -->
+    
+ 
+   <!-- JavaScript for Agent bot -->
+<script>
+  // Import axios (if not already included in your project, include the axios library)
+  import axios from 'https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js'; 
+
+  const api_key = 'ebe16e9b-19bb-437b-bcac-0e25f3e98a6f';
+  const assistant_id = 'ff9a4dc0-0126-492a-bfb3-a354e0c136c2';
+  let session_id;
+
+  // Asynchronous function to handle chat
+  async function startChat() {
+    try {
+      // Create a new chat session
+      const chatSession = await axios.post(
+        'https://agentivehub.com/api/chat',
+        {
+          "api_key": api_key,
+          "assistant_id": assistant_id
+        }
+      );
+
+      session_id = chatSession.data.session_id;
+
+      // Send a message to the chat session
+      const chatResponse = {
+        api_key,
+        session_id,
+        assistant_id,
+        messages: [{ role: 'user', content: 'Say Hello!' }]
+      };
+
+      const chat = await axios.post(
+        'https://agentivehub.com/api/chat',
+        chatResponse
+      );
+
+      console.log('Chat response:', chat.data);
+    } catch (error) {
+      console.error('Error occurred:', error.response ? error.response.data : error.message);
+    }
+  }
+
+  // Start the chat
+  startChat();
+</script>
+
 </body>
 </html>

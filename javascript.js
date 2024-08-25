@@ -132,3 +132,10 @@ document.addEventListener("DOMContentLoaded", function () {
     // Update active link on scroll
     window.addEventListener("scroll", updateActiveLink);
 });
+
+
+function toggleMobileMenu(menu) {
+    menu.classList.toggle('open');
+    document.querySelector('.mobile-menu').classList.toggle('open');
+}
+
