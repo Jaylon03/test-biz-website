@@ -287,15 +287,19 @@ nav ul li a:hover {
 }
 /* mobile menu*/
 
-#hamburger-icon {
+/*#hamburger-icon {
+    position: fixed;
+    left: 20px;
+    top: 20px;
     margin: auto 0;
     display: none;  
     cursor: pointer;
+    
 }
 #hamburger-icon div {
     width: 35px;
     height: 3px;
-    background-color: black; /* Changed from white to black */
+    background-color: rgb(253, 252, 252); /* Changed from white to black 
     margin: 6px 0;
     transition: 0.4s;
 }
@@ -340,7 +344,8 @@ nav ul li a:hover {
     font-size: 18px;
     display: block;
     padding: 10px 15px;
-}
+}*/
+
 /* See More Button Styles */
 .see-more-container {
     display: flex;
