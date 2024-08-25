@@ -2,7 +2,7 @@
 import axios from 'axios' 
 
 const api_key = 'ebe16e9b-19bb-437b-bcac-0e25f3e98a6f' 
-const assistant_id = 'ff9a4dc0-0126-492a-bfb3-a354e0c136c2' 
+const assistant_id = 'da0999de-e01e-464a-ab0d-a80943c32be6' 
 let session_id;
 
 // Create a new chat session 
