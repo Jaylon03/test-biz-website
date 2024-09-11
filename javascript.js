@@ -1,9 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Animate hero section
-    gsap.to(".logo", { opacity: 1, duration: 0.6, delay: 0.2, ease: "power2.out" });
-    gsap.to(".tagline", { opacity: 1, duration: 0.6, delay: 0.4, ease: "power2.out" });
-    gsap.to(".button-container", { opacity: 1, duration: 0.6, delay: 0.6, ease: "power2.out" });
-
+   
     // Animate services section
     gsap.to("#services .container", { opacity: 1, duration: 0.6, delay: 0.4, ease: "power2.out" });
     gsap.to("#services h2", { opacity: 1, duration: 0.6, delay: 0.5, ease: "power2.out" });
@@ -15,14 +11,6 @@ document.addEventListener("DOMContentLoaded", function () {
     gsap.to("#contact", { opacity: 1, duration: 0.6, delay: 0.8, ease: "power2.out" });
     gsap.to("footer", { opacity: 1, y: 0, duration: 0.6, delay: 0.9, ease: "power2.out" });
 
-    // Fade in header
-    gsap.from("header", {
-        opacity: 0,
-        y: -50,
-        duration: 0.4,  // Faster animation duration
-        ease: "power1.out",
-    });
-
     // Fade in services cards
     gsap.from("#services .service", {
         opacity: 0,
@@ -32,14 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
         stagger: 0.1  // Slight stagger for a smoother appearance
     });
 
-    // Animation for contact section
-    gsap.from("#contact", {
-        opacity: 0,
-        y: 20,
-        duration: 0.5,  // Faster animation duration
-        ease: "power2.out",
-    });
-
+   
     // Dynamic Navbar Active Link Detection
     const sections = document.querySelectorAll("section"); // Assuming sections have IDs
     const navLinks = document.querySelectorAll("nav ul li a");

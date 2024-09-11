@@ -28,16 +28,16 @@
                 <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#services">Services</a></li>
-                   
                     <li><a href="https://calendly.com/jnsolutionsms/30-min">Book Call</a></li>
                 </ul>
             </nav>
         </div>
 
-      <!--  <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+       <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
             <div class="bar1"></div>
             <div class="bar2"></div>
             <div class="bar3"></div>
+            
             <ul class="mobile-menu">
 
                 <li><a href="#home">Home</a></li>
@@ -45,7 +45,7 @@
                 <li><a href="https://calendly.com/jnsolutionsms/30-min">Book Call</a></li>
                 
             </ul>     
-        </div>-->
+        </div>
     </header>
 
     <!-- Hero Section -->
@@ -102,7 +102,7 @@
                 <p>Our chatbots enhance customer interactions.</p>
                 <p>Solutions tailored for global businesses.</p>
             </div>
-            >
+            
             
             <!-- <div class="see-more-container">
                 <a href="services.html" class="see-more-button">See More</a>
@@ -199,6 +199,19 @@
   // Start the chat
   startChat();
 </script>
-<script src="https://app.stammer.ai/static/chatbot/js/chatbubble.js" data-id="a5ead92c-4239-460b-970a-a6e7b4d93b98" data-domain="https://app.stammer.ai" ></script>
+<script type="text/javascript">
+    (function(d, t) {
+        var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+        v.onload = function() {
+          window.voiceflow.chat.load({
+            verify: { projectID: '66db45b2e86178552f18350e' },
+            url: 'https://general-runtime.voiceflow.com',
+            versionID: 'production'
+          });
+        }
+        v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+    })(document, 'script');
+  </script>
+
 </body>
 </html>
